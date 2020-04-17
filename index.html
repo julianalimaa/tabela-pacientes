@@ -20,8 +20,11 @@
 			<section class="container">
 				<h2>Meus pacientes</h2>
 				
-				<label for="filtro-tabela">Filtro de informações</label>
-				<input type="text" id="filtro-tabela" name="filtro" placeholder="Digite o nome do paciente">
+				<div class = "filtro">
+					<label for="filtro-tabela" class="label-filtro">Localizar paciente :</label>
+					<input type="text" id="filtro-tabela" name="filtro" placeholder="Digite o nome do paciente">
+				</div>
+
 
 				<table class="tabela">
 					<thead>
@@ -74,11 +77,8 @@
 						</tr>
 					</tbody>
 				</table>
-
+		
 				
-				<button id="buscar-pacientes" class="botao bto-principal">Buscar pacientes</button>
-				<span id="erro-ajax" class="invisivel">Erro ao buscar pacientes</span>
-
 			</section>
 		</main>
 
@@ -103,9 +103,12 @@
 					<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 				</div>
 		
-				<button id="adicionar-paciente" class="botao bto-principal">Adiciona pacienter</button>
+				<button id="adicionar-paciente" class="botao bto-principal">Adicionar paciente</button>
 			</form>
 		</section>
+
+		<button id="buscar-pacientes" class="botao bto-principal">Importar paciente</button>
+		<span id="erro-ajax" class="invisivel">Erro ao importar pacientes</span>
 
 				
 		<script src="js/calcula-imc.js"></script>
